@@ -1,0 +1,48 @@
+<!DOC TYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="action.js"></script>
+	</head>
+	<body>
+		<div class='nav-bar'>
+			<ul class="tab-links">
+        		<li id="CB" class="active"><a href="#tab1">Current bid</a></li>
+        		<li id="List"><a href="#tab2">List</a></li>
+   			</ul>
+   			<div class="tab-content">
+        		<div id="tab1" class="tab active"> 		
+            		<form id="item-form">
+						<fieldset>
+							<img id="item-image" />
+							<b><label id="item-title"></label></b><br/>
+							<br/>							
+							Original price:<br/>
+							<b>$ <label id="item-price"></label><br/></b>
+							<br/>
+							Price in bitcoins:<br/>
+							<b><label id="item-bitprice"></label><br/></b>
+							<br/>
+							Price you wish to pay<br/>
+							$ <input id="item-reservation-price" type="text" /><br/>
+							<br/>
+							<input id="item-submit" class="btn" type="submit" />
+							<input id="item-original-item" type="hidden" />
+						</fieldset>
+					</form>
+        		</div>
+ 
+        		<div id="tab2" class="tab">
+				
+       			</div>
+ 
+        	</div><!--end of tab-content-->
+
+		</div><!--end of nav-bar-->
+		<footer>
+			Exchange powered by
+			<img src="block_chain.png" alt="BlockChain" />
+		</footer>
+	</body>
+</html>
